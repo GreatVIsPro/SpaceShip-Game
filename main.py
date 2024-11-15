@@ -164,8 +164,8 @@ while running:
         spawner = moon_group.add(moon)
         last_spawn_time = current_time
 
-    moon_collect = pygame.sprite.spritecollide(player, moon_group, True) # True to delete enemies on collision
-    moons_collected += len(moon_collect)  # Increment count based on collisions
+    moon_collect = pygame.sprite.spritecollide(player, moon_group, True) # True to collect moons
+    moons_collected += len(moon_collect)  # Increase moon count
 
     if moons_collected == 100:
         win_screen()
